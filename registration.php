@@ -1,4 +1,4 @@
 <?php 
 use \Magento\Framework\Component\ComponentRegistrar;
-ComponentRegistrar::register(ComponentRegistrar::MODULE, 'Blackmosquito_PaeckchenEU', __DIR__);
+ComponentRegistrar::register(ComponentRegistrar::MODULE, 'Blackmosquito_WarenpostEU_gross', __DIR__);
 ?>
