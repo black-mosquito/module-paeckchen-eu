@@ -2,16 +2,16 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
     <default>
         <carriers>
-            <paeckcheneu>
+            <warenpost-eu-gross>
                 <active>1</active>
                 <sallowspecific>0</sallowspecific>
-                <model>Blackmosquito\PaeckchenEU\Model\Carrier\PaeckchenEU</model>
-                <name>BM Päckchen EU</name>
+                <model>Blackmosquito\WarenpostEU_gross\Model\Carrier\WarenpostEU_gross</model>
+                <name>BM WarenpostEU_gross</name>
                 <price>7.50</price>
-                <title>BM-Päckchen EU</title>
+                <title>WarenpostEU_gross</title>
                 <type>I</type>
                 <specificerrmsg>---</specificerrmsg>
-            </paeckcheneu>
+            </warenpost-eu-gross>
         </carriers>
     </default>
 </config> 
