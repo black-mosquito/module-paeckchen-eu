@@ -1,16 +1,16 @@
 <?php
-namespace Blackmosquito\PaeckchenEU\Model\Carrier;
+namespace Blackmosquito\WarenpostEU_gross\Model\Carrier;
  
 use Magento\Quote\Model\Quote\Address\RateRequest;
 use Magento\Shipping\Model\Rate\Result;
  
-class PaeckchenEU extends \Magento\Shipping\Model\Carrier\AbstractCarrier implements
+class WarenpostEU_gross extends \Magento\Shipping\Model\Carrier\AbstractCarrier implements
     \Magento\Shipping\Model\Carrier\CarrierInterface
 {
     /**
      * @var string
      */
-    protected $_code = 'paeckcheneu';
+    protected $_code = 'warenpost-eu-gross';
  
     /**
      * @param \Magento\Framework\App\Config\ScopeConfigInterface $scopeConfig
@@ -38,7 +38,7 @@ class PaeckchenEU extends \Magento\Shipping\Model\Carrier\AbstractCarrier implem
      */
     public function getAllowedMethods()
     {
-        return ['paeckcheneu' => $this->getConfigData('name')];
+        return ['warenpost-eu-gross' => $this->getConfigData('name')];
     }
  
     /**
@@ -57,10 +57,10 @@ class PaeckchenEU extends \Magento\Shipping\Model\Carrier\AbstractCarrier implem
         /** @var \Magento\Quote\Model\Quote\Address\RateResult\Method $method */
         $method = $this->_rateMethodFactory->create();
  
-        $method->setCarrier('paeckcheneu');
+        $method->setCarrier('warenpost-eu-gross');
         $method->setCarrierTitle($this->getConfigData('title'));
  
-        $method->setMethod('paeckcheneu');
+        $method->setMethod('warenpost-eu-gross');
         $method->setMethodTitle($this->getConfigData('name'));
  
         /*you can fetch shipping price from different sources over some APIs, we used price from config.xml - xml node price*/
